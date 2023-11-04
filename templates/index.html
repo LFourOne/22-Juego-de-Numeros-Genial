@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for("static", filename="style.css")}}">
+    <title>Juego de Números Genial</title>
+</head>
+<body>
+    <section class="total-container">
+        <div class="total-subcontainer">
+            <div class="top-subcontainer">
+                <h1> Welcome to the Great Number Game! </h1>
+                <div class="paragraph">
+                    <p> I am thinking of a number between 1 and 100 </p>
+                    <p id="takeaguess"> Take a Guess! </p>
+                </div>
+            </div>
+            <div class="resultado" style="background-color: {{color}};">
+                <p> {{resultado}} </p>
+            </div>
+            <div class="bottom-subcontainer">
+                <form class="bottom-subcontainer" action="/mistery" method="POST">
+                    <input type="text" name="number-text" id="answer">
+                    <div> <button class="btn" type="submit"> Submit </button> </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

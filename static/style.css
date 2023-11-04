@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.total-container{
+    display: flex;
+    height: 800px;
+    width: 1500px;
+    margin: 60px 200px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+.total-subcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.top-subcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.bottom-subcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+h1{
+    font-size: 30px;
+}
+.paragraph{
+    font-size: 20px;
+    margin-left: 40px;
+}
+#takeaguess{
+    margin-left: 130px;
+}
+#answer{
+    height: 50px;
+    width: 100px;
+    margin-left: 170px;
+    text-indent: 40px;
+}
+.btn{
+    height: 40px;
+    width: 75px;
+    margin-left: 184px;
+}
+.resultado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 400px;
+    border: 2px solid;
+    margin-left: 30px;
+}
